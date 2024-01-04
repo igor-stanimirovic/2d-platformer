@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-
+    [SerializeField] float jumpForce = 7;
+    [SerializeField] float movementSpeed = 4;
     Rigidbody2D rb;
     Animator anim;
     SpriteRenderer spriteRend;
     float directionX;
-    [SerializeField] float jumpForce = 7;
-    [SerializeField] float movementSpeed = 4;
+    enum MovementState { idle, running, jumping, falling};
 
     // Start is called before the first frame update
     void Start()
@@ -39,21 +39,36 @@ public class PlayerMovement : MonoBehaviour
     // Animation runing & idle switcher method
     void UpdateAnimationStatus()
     {
+        MovementState state;
+
+
+        // Running animation contoller
         if (directionX > 0)
         {
-            anim.SetBool("running", true);
+            state = MovementState.running;
             spriteRend.flipX = false;
         }
 
         else if (directionX < 0)
         {
-            anim.SetBool("running", true);
+            state = MovementState.running;
             spriteRend.flipX = true;
         }
         else
         {
-            anim.SetBool("running", false);
+            state = MovementState.idle;
         }
+
+        // Jumping and Falling animation controller
+        if (rb.velocity.y > 0.1f)
+        {
+            state = MovementState.jumping;
+        }
+        else if (rb.velocity.y < -0.1f)
+        {
+            state = MovementState.falling;
+        }
+        anim.SetInteger("state",(int)state);
     }
 
 }
