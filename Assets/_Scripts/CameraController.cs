@@ -6,7 +6,7 @@ public class CameraController : MonoBehaviour
 {
 
     [SerializeField] GameObject player;
-    public float offset = -10;
+    [SerializeField] float offset = -10;
 
     // Update is called once per frame
     void LateUpdate()
