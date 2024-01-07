@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class CameraController : MonoBehaviour
 {
@@ -12,5 +13,6 @@ public class CameraController : MonoBehaviour
     void LateUpdate()
     {
         transform.position = player.transform.position + new Vector3(0,0,offset);
+        
     }
 }

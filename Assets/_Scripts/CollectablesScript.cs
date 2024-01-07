@@ -6,6 +6,8 @@ using TMPro;
 public class CollectablesScript : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI pointsText;
+    [SerializeField] TextMeshProUGUI deathPointsText;
+    [SerializeField] AudioSource pickupSound;
     int points = 0;
 
     // Method for handeling collectables
@@ -15,7 +17,10 @@ public class CollectablesScript : MonoBehaviour
         {
             Destroy(collision.gameObject);
             points++;
+            pickupSound.Play();
             pointsText.text = "Points: " + points;
+            deathPointsText.text = "POINTS: " + points;
         }
     }
+    
 }

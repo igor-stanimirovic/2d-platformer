@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-
+    [SerializeField] LayerMask ground;
+    [SerializeField] AudioSource jumpSound;
     [SerializeField] float jumpForce = 7;
     [SerializeField] float movementSpeed = 4;
-    [SerializeField] LayerMask ground;
     Rigidbody2D rb;
     BoxCollider2D boxColl;
     Animator anim;
@@ -45,6 +45,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 rb.velocity = new Vector2(rb.velocity.x, jumpForce);
                 doubleJump = !doubleJump;
+                jumpSound.Play();
             }
         }
 
