@@ -33,10 +33,10 @@ public class PlayerLive : MonoBehaviour
             isDead = false;
         }
 
-        if (transform.position.y < yBound)
-        {
-            PlayerDeath();
-        }
+        //if (transform.position.y < yBound)
+        //{
+            //PlayerDeath();
+        //}
 
     }
 
