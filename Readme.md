@@ -32,7 +32,7 @@ Welcome to Jump Man, a 2D platformer game that showcases my skills in 2D game de
 
 1. **Download:** Clone the repository or download the game files from the releases section.
 
-2. **Install Unity:** Make sure you have Unity installed on your system (compatible version information can be provided here).
+2. **Install Unity:** Make sure you have Unity installed on your system (2022.3.4f1 was used).
 
 3. **Open Project:** Open the project in Unity.
 
