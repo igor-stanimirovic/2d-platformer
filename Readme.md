@@ -1,7 +1,5 @@
 # Jump Man - 2D Platformer Game
 
-![Jump Man Logo]((https://ibb.co/SnmngyB))
-
 ## Overview
 
 Welcome to Jump Man, a 2D platformer game that showcases my skills in 2D game development using Unity. This game is based on a course I watched, but I've heavily modified it.
