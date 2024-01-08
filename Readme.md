@@ -54,6 +54,6 @@ This project is licensed under the MIT License.
 
 ## Contact
 
-If you have any questions, or feedback, or just want to chat about game development, feel free to reach out on GitHub or over LinkedIn [LinkedIn](https://www.linkedin.com/in/igor-stanimirovic/)
+If you have any questions, or feedback, or just want to chat about game development, feel free to reach out on GitHub or over [LinkedIn](https://www.linkedin.com/in/igor-stanimirovic/)
 
 Enjoy playing Jump Man! 🚀
