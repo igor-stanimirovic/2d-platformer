@@ -40,7 +40,7 @@ Welcome to Jump Man, a 2D platformer game that showcases my skills in 2D game de
 
 ## Credits
 
-1. Coding in Flow. The game was based on his course [Course Link on YouTube]([https://link-url-here.org](https://www.youtube.com/watch?v=Ii-scMenaOQ&list=PLrnPJCHvNZuCVTz6lvhR81nnaf1a-b67U)https://www.youtube.com/watch?v=Ii-scMenaOQ&list=PLrnPJCHvNZuCVTz6lvhR81nnaf1a-b67U)
+1. Coding in Flow. The game was based on his course [His YouTube Channel](https://www.youtube.com/c/codinginflow)
 
 2. Asset pack used: [PixelAdventure1](https://assetstore.unity.com/packages/2d/characters/pixel-adventure-1-155360)
 
