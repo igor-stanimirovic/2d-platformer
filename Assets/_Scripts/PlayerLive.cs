@@ -26,6 +26,7 @@ public class PlayerLive : MonoBehaviour
     void Update()
     {
 
+        // Space to restart the Level
         if (isDead && Input.GetButtonDown("Jump"))
         {
             LevelReloader();
@@ -33,10 +34,11 @@ public class PlayerLive : MonoBehaviour
             isDead = false;
         }
 
-        //if (transform.position.y < yBound)
-        //{
-            //PlayerDeath();
-        //}
+        // Eec to go to the Start screen
+        if (isDead && Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene(0);
+        }
 
     }
 

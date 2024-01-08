@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -12,6 +13,13 @@ public class PlayerMovement : MonoBehaviour
     BoxCollider2D boxColl;
     Animator anim;
     SpriteRenderer spriteRend;
+    float xBoundMin_Level1 = -5.56f;
+    float xBoundMax_Level1 = 70f;
+    float xBoundMin_Level2 = -5.49f;
+    float xBoundMax_Level2 = 68.467f;
+    float xBoundMin;
+    float xBoundMax;
+    float clampedX;
     float directionX;
     bool doubleJump;
     enum MovementState {idle, running, jumping, falling};
@@ -24,6 +32,7 @@ public class PlayerMovement : MonoBehaviour
         boxColl = GetComponent<BoxCollider2D>();
         anim = GetComponent<Animator>();
         spriteRend = GetComponent<SpriteRenderer>();
+        SetBoundaries();
     }
 
     // Update is called once per frame
@@ -31,7 +40,15 @@ public class PlayerMovement : MonoBehaviour
     {
 
         directionX = Input.GetAxis("Horizontal");
-        transform.position += transform.right * directionX * movementSpeed * Time.deltaTime;
+        // Calculate the new position
+        Vector3 newPosition = transform.position + transform.right * directionX * movementSpeed * Time.deltaTime;
+
+        // Clamp the new position within the specified boundaries
+        clampedX = Mathf.Clamp(newPosition.x, xBoundMin, xBoundMax);
+
+        // Update the player's position only on the x-axis
+        transform.position = new Vector3(clampedX, transform.position.y, transform.position.z);
+
 
         // Jumping and double jumping conditions
         if (!Input.GetButtonDown("Jump") && IsOnGround())
@@ -92,6 +109,24 @@ public class PlayerMovement : MonoBehaviour
     bool IsOnGround()
     {
         return Physics2D.BoxCast(boxColl.bounds.center, boxColl.bounds.size, 0, Vector2.down, 0.1f, ground);
+    }
+
+    // Method for setting appropriate boundaries depending on the Scene
+    void SetBoundaries()
+    {
+        // Check the current scene and set boundaries accordingly
+        string currentSceneName = SceneManager.GetActiveScene().name;
+
+        if (currentSceneName == "Level 1")
+        {
+            xBoundMin = xBoundMin_Level1;
+            xBoundMax = xBoundMax_Level1;
+        }
+        else if (currentSceneName == "Level 2")
+        {
+            xBoundMin = xBoundMin_Level2;
+            xBoundMax = xBoundMax_Level2;
+        }
     }
 
 }
