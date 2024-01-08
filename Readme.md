@@ -1,6 +1,6 @@
 # Jump Man - 2D Platformer Game
 
-![Jump Man Logo](link_to_logo_image.png)
+![Jump Man Logo]((https://ibb.co/SnmngyB))
 
 ## Overview
 
