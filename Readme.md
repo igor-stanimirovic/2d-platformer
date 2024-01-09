@@ -20,10 +20,10 @@ I'm still learning Unity 2D & 3D Development. This is just a part of my journey 
 ## Screenshots
 
 ![Screenshot 1](https://i.postimg.cc/J7GKzXQs/Jump-Man-Thumbnail.png)
-*Caption for Screenshot 1*
+*Screenshot of the First Level*
 
-![Screenshot 2](link_to_screenshot_2.png)
-*Caption for Screenshot 2*
+![Screenshot 2](https://i.postimg.cc/mrpXmywG/Jump-Man-Thumbnail2.png)
+*Screenshot of the Secound Level*
 
 ## How to Play
 
