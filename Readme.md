@@ -29,7 +29,9 @@ I'm still learning Unity 2D & 3D Development. This is just a part of my journey 
 
 ## How to Play
 
-0. **Easy Way:** Play the game on my portfolio site.
+**Easy Way:** Play the game on [my itch.io](https://igac.itch.io/jump-man).
+
+**OR**
 
 1. **Download:** Clone the repository or download the game files from the releases section.
 
