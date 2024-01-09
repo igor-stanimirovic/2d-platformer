@@ -19,7 +19,7 @@ I'm still learning Unity 2D & 3D Development. This is just a part of my journey 
 
 ## Screenshots
 
-![Screenshot 1]((https://i.postimg.cc/J7GKzXQs/Jump-Man-Thumbnail.png))
+![Screenshot 1](https://i.postimg.cc/J7GKzXQs/Jump-Man-Thumbnail.png)
 *Caption for Screenshot 1*
 
 ![Screenshot 2](link_to_screenshot_2.png)
