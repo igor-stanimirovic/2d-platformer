@@ -3,6 +3,7 @@
 ## Overview
 
 Welcome to Jump Man, a 2D platformer game that showcases my skills in 2D game development using Unity. This game is based on a course I watched, but I've heavily modified it.
+I'm still learning Unity 2D & 3D Development. This is just a part of my journey hope you enjoy it.
 
 ## Features
 
